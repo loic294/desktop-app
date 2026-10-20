@@ -94,7 +94,10 @@
       "tray_icon_theme_description": "Wähle aus, ob das Taskleisten-Symbol dem Desktop-Design folgen oder eine feste Farbe verwenden soll",
       "tray_icon_theme_light": "Hell",
       "setting_save_failed": "Einstellung konnte nicht gespeichert werden",
-      "trace_logging": "Trace-Protokollierung aktivieren"
+      "trace_logging": "Trace-Protokollierung aktivieren",
+      "load_failed": "Die Einstellungsdatei konnte nicht geladen werden. Änderungen können erst gespeichert werden, wenn die Datei repariert oder gelöscht und die App neu gestartet wurde.",
+      "load_failed_recovery": "Beende die App, repariere oder lösche die unten angezeigte Einstellungsdatei und starte die App anschließend neu.",
+      "load_status_unavailable": "Es kann nicht überprüft werden, ob die geänderten Einstellungen gespeichert werden können. Schließe die Einstellungen und öffne sie erneut, um es noch einmal zu versuchen."
     },
     "tray": {
       "check_for_updates": "Auf Updates prüfen",
@@ -108,7 +111,10 @@
       "previous": "⏮ Vorheriges",
       "relaunch": "Neu starten",
       "settings": "Einstellungen...",
-      "switch_server": "Server wechseln..."
+      "switch_server": "Server wechseln...",
+      "open_settings": "Einstellungen öffnen",
+      "setting_save_failed_title": "Einstellung nicht geändert",
+      "setting_save_failed_message": "Die Änderung konnte nicht gespeichert werden, daher hat sich „Discord Rich Presence“ nicht geändert. Öffne die Einstellungen, um zu prüfen, ob eine Warnung bezüglich der Einstellungsdatei vorliegt, und um Anweisungen zur Wiederherstellung zu erhalten. Wenn keine Warnung angezeigt wird, überprüfe das Anwendungsprotokoll auf weitere Details."
     },
     "dialog": {
       "companion_server_message": "Music Assistant konnte die Unterstützung durch die Companion-App nicht überprüfen. Die Verbindung wird zwar hergestellt, aber auf diesem Gerät wird möglicherweise kein App-Badge angezeigt.",
@@ -160,7 +166,9 @@
       "zoom": "Zoom"
     },
     "about": {
-      "version": "Version {0}"
+      "version": "Version {0}",
+      "app_name": "Music Assistant Companion App",
+      "release_notes": "Versionshinweise"
     }
   }
 }

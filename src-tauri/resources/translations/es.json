@@ -94,7 +94,10 @@
       "tray_icon_theme_description": "Elige si el icono de la bandeja intenta seguir el tema del escritorio o utiliza un color fijo.",
       "tray_icon_theme_light": "Claro",
       "setting_save_failed": "No se ha podido guardar la configuración",
-      "trace_logging": "Activar el registro detallado"
+      "trace_logging": "Activar el registro detallado",
+      "load_failed": "No se ha podido cargar el archivo de configuración. No se podrán guardar los cambios hasta que se repare o elimine el archivo y se reinicie la aplicación.",
+      "load_failed_recovery": "Cierra la aplicación, repara o elimina el archivo de configuración que se muestra a continuación y, después, reinicia la aplicación.",
+      "load_status_unavailable": "No se puede comprobar si se pueden guardar los cambios en los ajustes. Cierra y vuelve a abrir Ajustes para intentarlo de nuevo."
     },
     "tray": {
       "check_for_updates": "Comprobar si hay actualizaciones",
@@ -108,7 +111,10 @@
       "previous": "⏮ Anterior",
       "relaunch": "Reiniciar",
       "settings": "Configuración...",
-      "switch_server": "Cambiar de servidor..."
+      "switch_server": "Cambiar de servidor...",
+      "open_settings": "Abrir ajustes",
+      "setting_save_failed_title": "Ajuste no modificado",
+      "setting_save_failed_message": "No se han podido guardar los cambios, por lo que Discord Rich Presence no ha cambiado. Abre Ajustes para comprobar si hay alguna advertencia sobre el archivo de configuración e instrucciones para recuperarlo. Si no aparece ninguna advertencia, consulta el registro de la aplicación para obtener más detalles."
     },
     "dialog": {
       "companion_server_message": "Music Assistant no ha podido verificar la compatibilidad con la aplicación complementaria. La conexión continuará, pero es posible que este dispositivo no muestre el distintivo de la aplicación.",

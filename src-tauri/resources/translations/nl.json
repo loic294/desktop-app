@@ -94,7 +94,10 @@
       "tray_icon_theme_description": "Kies of het pictogram in de taakbalk het bureaubladthema volgt of een vaste kleur gebruikt",
       "tray_icon_theme_light": "Licht",
       "setting_save_failed": "Instelling opslaan mislukt",
-      "trace_logging": "Schakel trace-logging in"
+      "trace_logging": "Schakel trace-logging in",
+      "load_failed": "Het instellingenbestand kon niet worden geladen. Wijzigingen kunnen pas worden opgeslagen nadat het bestand is hersteld of verwijderd en de app opnieuw is gestart.",
+      "load_failed_recovery": "Sluit de app af, herstel of verwijder het hieronder weergegeven instellingenbestand en start de app vervolgens opnieuw op.",
+      "load_status_unavailable": "Het is niet mogelijk om te controleren of de gewijzigde instellingen kunnen worden opgeslagen. Sluit het venster ‘Instellingen’ en open het opnieuw om het nog eens te proberen."
     },
     "tray": {
       "check_for_updates": "Controleer op updates",
@@ -108,7 +111,10 @@
       "previous": "⏮ Vorige",
       "relaunch": "Herstarten",
       "settings": "Instellingen...",
-      "switch_server": "Van server wisselen..."
+      "switch_server": "Van server wisselen...",
+      "open_settings": "Open instellingen",
+      "setting_save_failed_title": "Instelling niet gewijzigd",
+      "setting_save_failed_message": "De wijziging kon niet worden opgeslagen, dus Discord Rich Presence is niet gewijzigd. Open ‘Instellingen’ om te controleren of er een waarschuwing over het instellingenbestand staat en of er herstelinstructies zijn. Als er geen waarschuwing verschijnt, kijk dan in het applicatielogboek voor meer informatie."
     },
     "dialog": {
       "companion_server_message": "Music Assistant kon de ondersteuning voor de app niet verifiëren. De app blijft verbonden, maar het kan zijn dat op dit apparaat het app-pictogram niet wordt weergegeven.",

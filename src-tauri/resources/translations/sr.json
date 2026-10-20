@@ -86,7 +86,11 @@
       "volume_software_only": "Само софтвер",
       "debug_logging": "Омогући евидентирање грешака",
       "debug_logging_description": "Пишите детаљне дијагностичке логове. Укључите ово, репродукујте проблем, а затим користите опцију „Open log file“ у менију палете да бисте приложили лог проблему на „GitHub“-у.",
-      "troubleshooting": "Решавање проблема"
+      "troubleshooting": "Решавање проблема",
+      "tray_icon_theme_auto": "Ауто",
+      "tray_icon_theme_dark": "Тамна",
+      "tray_icon_theme_light": "Светла",
+      "setting_save_failed": "Чување подешавања није успело"
     },
     "tray": {
       "check_for_updates": "Провери ажурирања",
@@ -111,6 +115,18 @@
       "open_instructions": "Отворите упутства",
       "package_unknown_linux_title": "Потребно је ручно ажурирање",
       "manual_update_title": "Потребно је ручно ажурирање"
+    },
+    "mac_menu": {
+      "minimize": "Минимизирај",
+      "paste": "Налепи",
+      "quit": "Одустани {0}",
+      "redo": "Понови",
+      "select_all": "Изабери све",
+      "window": "Прозор",
+      "zoom": "Зумирање"
+    },
+    "about": {
+      "version": "Верзија {0}"
     }
   }
 }
