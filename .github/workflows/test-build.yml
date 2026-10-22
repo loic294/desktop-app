@@ -1,8 +1,6 @@
 name: Desktop test build
 
 on:
-  push:
-    branches: [playlist-playback-test]
   workflow_dispatch:
 
 permissions:
