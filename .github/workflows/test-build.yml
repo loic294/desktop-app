@@ -1,0 +1,37 @@
+name: Desktop test build
+
+on:
+  push:
+    branches: [playlist-playback-test]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: yarn
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+      - run: yarn install --frozen-lockfile
+      - run: yarn test:web
+      - run: cargo test --manifest-path src-tauri/Cargo.toml
+      - name: Build unsigned macOS app
+        run: yarn build --bundles app --config src-tauri/tauri.test.conf.json
+      - name: Preserve app bundle permissions
+        run: ditto -c -k --sequesterRsrc --keepParent "src-tauri/target/release/bundle/macos/Music Assistant Playlist Test.app" Music-Assistant-macOS-test.zip
+      - uses: actions/upload-artifact@v7
+        with:
+          name: Music-Assistant-macOS-test
+          path: Music-Assistant-macOS-test.zip
+          retention-days: 30

@@ -1,0 +1,7 @@
+{
+  "productName": "Music Assistant Playlist Test",
+  "identifier": "io.music-assistant.companion.playlist-test",
+  "bundle": {
+    "createUpdaterArtifacts": false
+  }
+}

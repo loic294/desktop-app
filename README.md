@@ -57,6 +57,26 @@ include automatically generated notes; older releases may have only a version la
 
 ### Architecture
 
+#### Fork playlist test builds
+
+The `playlist-playback-test` branch works with the matching custom server at
+`http://HOME_ASSISTANT_IP:8095`. Playlist settings and remaining-time rendering
+come from the server-hosted web frontend, so no native feature patch is needed.
+The **Desktop test build** workflow produces an unsigned Apple Silicon macOS app
+artifact without upstream signing credentials. For a local build:
+
+```bash
+yarn build --bundles app --config src-tauri/tauri.test.conf.json
+open "src-tauri/target/release/bundle/macos/Music Assistant Playlist Test.app"
+```
+
+The test bundle uses a separate app identifier and settings directory so it can
+coexist with your installed desktop app.
+The normal upstream desktop app also works with this custom server. The fork
+retains the official desktop update feed; it does not update or replace your
+custom server. See the [server deployment guide](https://github.com/loic294/server/blob/playlist-playback-test/docs/test-deployment.md)
+for Home Assistant installation, backups and rollback.
+
 The companion app wraps the Music Assistant frontend (hosted on your MA server) in a native webview, while providing some additional native features:
 
 - Native Sendspin client for bit-perfect audio playback
