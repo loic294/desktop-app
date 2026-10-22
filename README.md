@@ -60,7 +60,8 @@ include automatically generated notes; older releases may have only a version la
 #### Fork playlist test builds
 
 Use the normal desktop app with the official **Music Assistant DEV SERVER**
-Home Assistant app configured to install both fork branches. Connect the desktop
+Home Assistant app configured to install the fork server and its prebuilt frontend
+(`frontend_repo: ""`). Connect the desktop
 to `http://HOME_ASSISTANT_IP:8195` (here `http://192.168.68.76:8195`), not the
 normal server at port 8095. Playlist settings and remaining-time rendering come
 from that server-hosted frontend; no custom desktop binary is required.
